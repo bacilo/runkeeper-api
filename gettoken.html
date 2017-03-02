@@ -1,0 +1,21 @@
+<!-- 
+	This html code and approach used to get the API token was taken from:
+	https://gist.github.com/ats/5538092 
+	-->
+
+<html>
+<body>
+	<h1>runkeeper API token obtainer</h1>
+
+	<p>Insert values for your API key below, and submit. This form will return a token that can be used for Runkeeper API requests.</p>
+	<form action="https://runkeeper.com/apps/token" method="POST" enctype="application/x-www-form-urlencoded">
+		grant_type <input type="text" name="grant_type" value="authorization_code"><br>
+		code <input type="text" name="code" value=""><br>
+		client_id <input type="text" name="client_id" value=""><br> 
+		client_secret <input type="text" name="client_secret" value=""><br> 
+		redirect_uri <input type="text" name="redirect_uri" value="http://[MY_URL.COM]"><br>    
+		<input type="submit">
+
+	</form>
+</body> 
+</html>
